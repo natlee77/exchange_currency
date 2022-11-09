@@ -1,0 +1,49 @@
+.container {
+  background-color:rgb(229, 242, 253);
+  width: 100%;
+  color:rgb(29, 60, 160);
+  margin-bottom: 2rem;
+}
+.main-container{
+  position: relative;
+  padding-top: 1rem;
+  padding-left: 2rem;
+
+  background-color : #2323b1;
+  border: solid;
+  border-radius:10px;
+  width: 340px;
+  color: rgb(249, 242, 242);
+  font-size: 20px;
+  display: center;
+  align-items: center;
+  justify-content: center;
+}
+.selection-cont{
+  /* display:flex; */
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+@media screen and (max-width: 575px) {
+  .logo {
+      display: none;
+      visibility: hidden;
+  }
+}
+.btn-swap{
+  border-radius: 30%;
+  border: transparent;
+
+}
+.btn{
+  border-radius: 5px;
+  border: transparent;
+}
+.btn:hover{
+  background-color:   rgb(151, 231, 163);
+
+}
+.select{
+  height: 110%;
+}

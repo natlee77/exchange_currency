@@ -1,0 +1,10 @@
+
+<div class="rates-container">
+  <div *ngFor="let rate of rates$ | async">
+      <span>{{rate.ccy}} - </span>
+      <span>{{rate.base_ccy}} :   </span>
+      <span>buy = {{rate.buy}} </span>
+      <span> sell = {{rate.sale}} </span>
+
+  </div>
+</div>
