@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faBars, faCopyright } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +11,6 @@ export class AppComponent {
 
 
   footerDate: any = new Date();
-  constructor(private library: FaIconLibrary) {
-    library.addIcons(faBars, faCopyright);
-  }
+
 
 }

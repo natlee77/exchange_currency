@@ -18,13 +18,13 @@ bases=['UAH','USD','EUR'];
      cont2: new FormControl( )
   })
   currjson: any=[];
-  base: string=' ';
+  base: any=' ';
   cont2: any = ' '  ;
   result: any=[];
   amount: any=[];
   price: any=[];
-  public selectedbase="null";
-  public selectedcont2="null";
+  public selectedbase=".";
+  public selectedcont2=".";
     changebase(event: any){
          this.base = this.selectedbase;
             // console.log('base :', this.base)
@@ -93,10 +93,8 @@ bases=['UAH','USD','EUR'];
             console.log(this.result)
           }
         }
-
-
        if (this.base==this.cont2){
-        this.result= ' 1 '
+        this.result=  this.amount
        }
 
 

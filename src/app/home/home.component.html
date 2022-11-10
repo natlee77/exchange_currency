@@ -2,7 +2,7 @@
 <div class="container">
 <div class="main-container me-1 mt-2">
   <div class="selection-cont" [formGroup]="slcform">
-    <input #c3 min='1' value="1" type="text" (mouseleave)="amounts(c3.value)" required title="сколько менять">
+    <input #c3 min='1' value="1" type="text" (mouseover)="amounts(c3.value)" required title="сколько менять">
 
       <select [(ngModel)]="selectedbase" min="1" name="options1"   id="slc1" class="form-control" formControlName="base" title="валюта"  (ngModelChange)="changebase($event)">
           <option *ngFor="let base of bases" [value]="base">
