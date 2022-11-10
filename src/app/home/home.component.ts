@@ -36,6 +36,7 @@ bases=['UAH','USD','EUR'];
   }
   amounts(c: string ){
     this.amount = c;
+    this.result=0;
     // console.log('amount: ',this.amount)
   }
   constructor(private currency: CurrencyapidataService) {
